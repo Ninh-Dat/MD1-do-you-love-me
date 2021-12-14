@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        h2 {
+            position: absolute;
+            left: 220px;
+            top: 175px
+        }
+    </style>
+</head>
+<body>
+<H2>Do yuo love me?</H2>
+<button style="position:absolute;left: 285px;top:235px;" onclick="nhan()">YES</button>
+<button style="position:absolute;left: 400px;top:235px;"  onmouseover="kich()" id="dat">NO</button>
+<script>
+    function nhan()
+    {
+        alert('<3')
+    }
+function kich()
+{
+    let x = Math.round(Math.random() * window.innerWidth);
+    let y = Math.round(Math.random() * window.innerHeight);
+    document.getElementById("dat").style.left = x +  'px';
+    document.getElementById("dat").style.top = y +  'px';
+}
+
+
+</script>
+</body>
+</html>
